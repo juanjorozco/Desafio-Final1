@@ -1,0 +1,16 @@
+{% extends "AppFinal/padre.html" %} 
+
+{% load static %} 
+
+{% block contenidoQueCambia %}
+
+    Años de experiencia : {{años}}
+    <br>
+    Trabajos anteriores: 
+    <br>
+    {%for experiencia in experiencia%}
+        {{experiencia.trabajos_anteriores}}
+        <br>
+    {%endfor%}
+
+{% endblock %}

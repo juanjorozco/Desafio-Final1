@@ -1,0 +1,30 @@
+{% extends "AppFinal/padre.html" %} 
+
+{% load static %} 
+
+{% block contenidoQueCambia %}
+
+    Edad : {{edad}}
+    <br>
+    Nombre: 
+    <br>
+    {%for personal in personal%}
+        {{personal.nombres}}
+        <br>
+    {%endfor%}
+    <br>
+    Apellido:
+    <br>
+    {%for personal in personal%}
+        {{personal.apellidos}}
+        <br>
+    {%endfor%}
+    <br>
+    Nacionalidad: 
+    <br>
+    {%for personal in personal%}
+        {{personal.nacionalidad}}
+        <br>
+    {%endfor%}
+
+{% endblock %}

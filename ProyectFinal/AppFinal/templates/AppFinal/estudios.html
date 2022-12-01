@@ -1,0 +1,16 @@
+{% extends "AppFinal/padre.html" %} 
+
+{% load static %} 
+
+{% block contenidoQueCambia %}
+
+    <h1>Estudios</h1>
+    <br>
+        <form action="" method="post">{% csrf_token %}
+            <table>
+                {{miEstudios.as_table}}
+            </table>
+            <input type="submit",value="Enviar">
+        </form>
+
+{% endblock %}
